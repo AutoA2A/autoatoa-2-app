@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><script>window.APP_DATA = [{"id":"1","title":"静夜思","author":"李白","dynasty":"唐","theme":"思乡","content":"床前明月光，疑是地上霜。举头望明月，低头思故乡。","pinyin":"Chuáng qián míng yuè guāng, yí shì dì shàng shuāng. Jǔ tóu wàng míng yuè, dī tóu sī gù xiāng.","note":"全诗四句，语言简练，情感真挚。","appreciation":"通过明月映照的光辉，寄托了诗人对故乡的深切思念。","background":"李白在旅途中夜宿异乡，望月而起，思念家乡。","image":"images/jingyesi.jpg"},{"id":"2","title":"春晓","author":"孟浩然","dynasty":"唐","theme":"春景","content":"春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。","pinyin":"Chūn mián bù jué xiǎo, chù chù wén tí niǎo. Yè lái fēng yǔ shēng, huā luò zhī duō shǎo.","note":"描写春晨的宁静与生机。","appreciation":"以睡意与鸟鸣对比，突显春天的活力与短暂。","background":"孟浩然隐居山林，春晨醒来感受自然之美。","image":"images/chunxiao.jpg"},{"id":"3","title":"黄鹤楼送孟浩然","author":"李白","dynasty":"唐","theme":"送别","content":"故人西辞黄鹤楼，烟花三月下扬州。孤帆远影碧天尽，惟见长江天际流。","pinyin":"Gù rén xī cí Huánghè lóu, yānhuā sān yuè xià Yángzhōu. Gū fān yuǎn yǐng bì tiān jìn, wéi jiàn Chángjiāng tiān jì liú.","note":"写别情与江水浩渺。","appreciation":"以黄鹤楼为起点，借江水的绵长表达离别之情。","background":"李白送友人孟浩然前往扬州，作此送别之作。","image":"images/huanghelou.jpg"},{"id":"4","title":"枫桥夜泊","author":"张继","dynasty":"唐","theme":"夜泊","content":"月落乌啼霜满天，江枫渔火对愁眠。姑苏城外寒山寺，夜半钟声到客船。","pinyin":"Yuè luò wū tí shuāng mǎn tiān, jiāng fēng yú huǒ duì chóu mián. Gūsū chéng wài Hánshān sì, yè bàn zhōng shēng dào kè chuán.","note":"以寒山寺钟声烘托离愁。","appreciation":"月色、乌啼、渔火、钟声交织，营造凄凉的夜泊意境。","background":"张继夜泊枫桥，听闻寒山寺钟声而作。","image":"images/fengqiaoyebo.jpg"},{"id":"5","title":"登鹳雀楼","author":"王之涣","dynasty":"唐","theme":"壮阔","content":"白日依山尽，黄河入海流。欲穷千里目，更上一层楼。","pinyin":"Bái rì yī shān jìn, Huánghé rù hǎi liú. Yù qióng qiān lǐ mù, gèng shàng yī céng lóu.","note":"四句描绘宏大景观。","appreciation":"以层层递进的视角，表达胸怀的开阔。","background":"王之涣登楼远眺，感慨天地之大。","image":"images/dengguanque.jpg"},{"id":"6","title":"江雪","author":"柳宗元","dynasty":"唐","theme":"孤寂","content":"千山鸟飞绝，万径人踪灭。孤舟蓑笠翁，独钓寒江雪。","pinyin":"Qiān shān niǎo fēi jué, wàn jìng rén zōng miè. Gū zhōu suō lì wēng, dú diào hán jiāng xuě.","note":"以极致的寂静表现诗人隐居情怀。","appreciation":"全诗以“绝”“灭”“孤”“独”四字构筑空灵意境。","background":"柳宗元被贬永州，写下此图景以抒怀。","image":"images/jiangxue.jpg"},{"id":"7","title":"相思","author":"王维","dynasty":"唐","theme":"相思","content":"红豆生南国，春来发几枝。愿君多采撷，此物最相思。","pinyin":"Hóng dòu shēng nán guó, chūn lái fā jǐ zhī. Yuàn jūn duō cǎi qiè, cǐ wù zuì xiāng sī.","note":"红豆象征相思之情。","appreciation":"语言朴素，却蕴含深厚情感，成为千古相思名句。","background":"王维在送别友人时作，以红豆寄托思念。","image":"images/xiangsi.jpg"},{"id":"8","title":"夜泊牛渚怀古","author":"杜甫","dynasty":"唐","theme":"怀古","content":"牛渚西江夜，青天无片云。登舟望秋月，空忆谢将军。","pinyin":"Niú zhǔ xī jiāng yè, qīng tiān wú piàn yún. Dēng zhōu wàng qiū yuè, kōng yì Xiè jiāng jūn.","note":"借古抒今，感叹时世变迁。","appreciation":"以清朗的夜色映衬对谢安的追忆，情景交融。","background":"杜甫在长江上夜泊，凭吊三国时期的谢安。","image":"images/niuzhu.jpg"}];</script>
+<meta charset="UTF-8">
+<title>诗词列表</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root{
+    --primary:#2f6fed;
+    --secondary:#f5a623;
+    --font-family:"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+    font-family:var(--font-family);
+    background:#f0f2f5;
+    color:#333;
+    line-height:1.5;
+    padding-top:64px;/* header height */
+}
+a{color:inherit;text-decoration:none;}
+header{
+    position:fixed;top:0;left:0;right:0;
+    height:56px;
+    background:var(--primary);
+    color:#fff;
+    display:flex;align-items:center;
+    justify-content:space-between;
+    padding:0 16px;
+    z-index:1000;
+    box-shadow:0 2px 6px rgba(0,0,0,.1);
+}
+header .logo{font-size:1.2rem;font-weight:bold;}
+header nav a{
+    margin-left:12px;
+    font-size:0.9rem;
+    padding:4px 8px;
+    border-radius:4px;
+    transition:background 0.2s,box-shadow 0.2s;
+}
+header nav a:hover{
+    background:rgba(255,255,255,0.2);
+    box-shadow:0 2px 4px rgba(0,0,0,0.2);
+}
+.container{
+    max-width:1200px;
+    margin:0 auto;
+    padding:16px;
+}
+.filter-bar{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-bottom:16px;
+}
+.filter-bar select{
+    padding:6px 8px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    background:#fff;
+    font-family:var(--font-family);
+}
+.grid{
+    display:grid;
+    gap:16px;
+}
+@media (max-width:599px){
+    .grid{grid-template-columns:1fr;}
+}
+@media (min-width:600px) and (max-width:959px){
+    .grid{grid-template-columns:repeat(2,1fr);}
+}
+@media (min-width:960px){
+    .grid{grid-template-columns:repeat(3,1fr);}
+}
+.card{
+    background:#fff;
+    border-radius:8px;
+    box-shadow:0 2px 6px rgba(0,0,0,.1);
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    transition:transform 0.2s,box-shadow 0.2s;
+}
+.card:hover{
+    transform:translateY(-2px);
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+.card img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+}
+.card .content{
+    padding:12px;
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+.card .title{
+    font-size:1.1rem;
+    font-weight:bold;
+    margin-bottom:4px;
+    color:var(--primary);
+}
+.card .meta{
+    font-size:0.85rem;
+    color:#666;
+    margin-bottom:8px;
+}
+.card .excerpt{
+    flex:1;
+    font-size:0.9rem;
+    color:#555;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+}
+.pagination{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:24px 0;
+    gap:8px;
+}
+.pagination button{
+    min-width:32px;
+    padding:6px 10px;
+    border:none;
+    background:var(--primary);
+    color:#fff;
+    border-radius:4px;
+    cursor:pointer;
+    transition:background 0.2s,box-shadow 0.2s;
+}
+.pagination button[disabled]{
+    background:#aaa;
+    cursor:not-allowed;
+}
+.pagination button:hover:not([disabled]){
+    background:var(--secondary);
+    box-shadow:0 2px 4px rgba(0,0,0,.2);
+}
+</style>
+<meta name="description" content="读取 URL 中的筛选参数（dynasty、author、theme），从共享数据过滤后分页展示诗词卡片。点击卡片跳转至 detail.html?id=poemId。"><meta name="keywords" content="古诗词,中华文化,诗词解析,古代文学,诗词搜索,朝代筛选,作者作品,主题赏析"><meta name="robots" content="index,follow,max-image-preview:large"><meta property="og:type" content="website"><meta property="og:title" content="诗词列表"><meta property="og:description" content="读取 URL 中的筛选参数（dynasty、author、theme），从共享数据过滤后分页展示诗词卡片。点击卡片跳转至 detail.html?id=poemId。"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="诗词列表"><meta name="twitter:description" content="读取 URL 中的筛选参数（dynasty、author、theme），从共享数据过滤后分页展示诗词卡片。点击卡片跳转至 detail.html?id=poemId。"><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"诗词列表","description":"读取 URL 中的筛选参数（dynasty、author、theme），从共享数据过滤后分页展示诗词卡片。点击卡片跳转至 detail.html?id=poemId。","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}}</script></head>
+<body>
+<header>
+    <div class="logo">中华古诗词赏析平台</div>
+    <nav>
+        <a href="index.html">首页</a>
+        <a href="list.html">诗词列表</a>
+        <a href="author.html">作者</a>
+        <a href="theme.html">主题</a>
+        <a href="about.html">关于</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1 style="color:var(--secondary);margin-bottom:12px;">诗词列表</h1>
+
+    <div class="filter-bar">
+        <select id="dynastySelect"><option value="">全部朝代</option></select>
+        <select id="authorSelect"><option value="">全部作者</option></select>
+        <select id="themeSelect"><option value="">全部主题</option></select>
+        <button id="applyFilter" style="background:var(--primary);color:#fff;border:none;padding:6px 12px;border-radius:4px;cursor:pointer;">筛选</button>
+    </div>
+
+    <div id="poemGrid" class="grid"></div>
+
+    <div class="pagination" id="pagination"></div>
+</div>
+
+<script>
+// 读取共享数据
+const data = window.APP_DATA || {poems:[]};
+
+// 参数读取
+function getParam(name){
+    return new URLSearchParams(location.search).get(name)||'';
+}
+
+// 填充筛选下拉框
+function initFilters(){
+    const dynSet=new Set();
+    const authorSet=new Set();
+    const themeSet=new Set();
+    data.poems.forEach(p=>{
+        dynSet.add(p.dynasty);
+        authorSet.add(p.author);
+        themeSet.add(p.theme);
+    });
+    const dynastySelect=document.getElementById('dynastySelect');
+    const authorSelect=document.getElementById('authorSelect');
+    const themeSelect=document.getElementById('themeSelect');
+
+    dynSet.forEach(v=>dynastySelect.appendChild(new Option(v,v)));
+    authorSet.forEach(v=>authorSelect.appendChild(new Option(v,v)));
+    themeSet.forEach(v=>themeSelect.appendChild(new Option(v,v)));
+
+    // 设置初始值为URL参数
+    dynastySelect.value=getParam('dynasty');
+    authorSelect.value=getParam('author');
+    themeSelect.value=getParam('theme');
+}
+
+// 过滤
+function filterPoems(){
+    const dynasty=getParam('dynasty')||document.getElementById('dynastySelect').value;
+    const author=getParam('author')||document.getElementById('authorSelect').value;
+    const theme=getParam('theme')||document.getElementById('themeSelect').value;
+
+    let list=data.poems;
+    if(dynasty) list=list.filter(p=>p.dynasty===dynasty);
+    if(author) list=list.filter(p=>p.author===author);
+    if(theme) list=list.filter(p=>p.theme===theme);
+    return list;
+}
+
+// 渲染卡片
+function renderGrid(list,page,perPage){
+    const grid=document.getElementById('poemGrid');
+    grid.innerHTML='';
+    const start=(page-1)*perPage;
+    const slice=list.slice(start,start+perPage);
+    slice.forEach(p=>{
+        const card=document.createElement('div');
+        card.className='card';
+        card.innerHTML=`
+            <a href="detail.html?id=${p.id}">
+                ${p.image?`<img src="${p.image}" alt="${p.title}">`:''}
+                <div class="content">
+                    <div class="title">${p.title}</div>
+                    <div class="meta">${p.author}·${p.dynasty}·${p.theme}</div>
+                    <div class="excerpt">${p.content}</div>
+                </div>
+            </a>
+        `;
+        grid.appendChild(card);
+    });
+}
+
+// 渲染分页
+function renderPagination(total, page, perPage){
+    const container=document.getElementById('pagination');
+    container.innerHTML='';
+    const totalPages=Math.ceil(total/perPage);
+    const createBtn=(txt,disabled,handler)=>{ 
+        const btn=document.createElement('button');
+        btn.textContent=txt;
+        if(disabled) btn.disabled=true;
+        else btn.addEventListener('click',handler);
+        return btn;
+    };
+    container.appendChild(createBtn('«',page===1,()=>navigate(page-1)));
+    for(let i=1;i<=totalPages;i++){
+        const btn=createBtn(i, i===page,()=>navigate(i));
+        if(i===page) btn.style.background='var(--secondary)';
+        container.appendChild(btn);
+    }
+    container.appendChild(createBtn('»',page===totalPages,()=>navigate(page+1)));
+}
+
+// 页面跳转（保留筛选参数）
+function navigate(page){
+    const params=new URLSearchParams(location.search);
+    params.set('page',page);
+    location.search=params.toString();
+}
+
+// 主入口
+function init(){
+    initFilters();
+    document.getElementById('applyFilter').addEventListener('click',()=>{
+        const params=new URLSearchParams();
+        const d=document.getElementById('dynastySelect').value;
+        const a=document.getElementById('authorSelect').value;
+        const t=document.getElementById('themeSelect').value;
+        if(d) params.set('dynasty',d);
+        if(a) params.set('author',a);
+        if(t) params.set('theme',t);
+        // reset to first page
+        params.set('page',1);
+        location.search=params.toString();
+    });
+
+    const perPage=6;
+    const page=parseInt(getParam('page'))||1;
+    const filtered=filterPoems();
+    renderGrid(filtered,page,perPage);
+    renderPagination(filtered.length,page,perPage);
+}
+
+// 初始化
+init();
+</script>
+</body>
+</html>
