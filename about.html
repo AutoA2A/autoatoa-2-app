@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><script>window.APP_DATA = [{"id":"1","title":"静夜思","author":"李白","dynasty":"唐","theme":"思乡","content":"床前明月光，疑是地上霜。举头望明月，低头思故乡。","pinyin":"Chuáng qián míng yuè guāng, yí shì dì shàng shuāng. Jǔ tóu wàng míng yuè, dī tóu sī gù xiāng.","note":"全诗四句，语言简练，情感真挚。","appreciation":"通过明月映照的光辉，寄托了诗人对故乡的深切思念。","background":"李白在旅途中夜宿异乡，望月而起，思念家乡。","image":"images/jingyesi.jpg"},{"id":"2","title":"春晓","author":"孟浩然","dynasty":"唐","theme":"春景","content":"春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。","pinyin":"Chūn mián bù jué xiǎo, chù chù wén tí niǎo. Yè lái fēng yǔ shēng, huā luò zhī duō shǎo.","note":"描写春晨的宁静与生机。","appreciation":"以睡意与鸟鸣对比，突显春天的活力与短暂。","background":"孟浩然隐居山林，春晨醒来感受自然之美。","image":"images/chunxiao.jpg"},{"id":"3","title":"黄鹤楼送孟浩然","author":"李白","dynasty":"唐","theme":"送别","content":"故人西辞黄鹤楼，烟花三月下扬州。孤帆远影碧天尽，惟见长江天际流。","pinyin":"Gù rén xī cí Huánghè lóu, yānhuā sān yuè xià Yángzhōu. Gū fān yuǎn yǐng bì tiān jìn, wéi jiàn Chángjiāng tiān jì liú.","note":"写别情与江水浩渺。","appreciation":"以黄鹤楼为起点，借江水的绵长表达离别之情。","background":"李白送友人孟浩然前往扬州，作此送别之作。","image":"images/huanghelou.jpg"},{"id":"4","title":"枫桥夜泊","author":"张继","dynasty":"唐","theme":"夜泊","content":"月落乌啼霜满天，江枫渔火对愁眠。姑苏城外寒山寺，夜半钟声到客船。","pinyin":"Yuè luò wū tí shuāng mǎn tiān, jiāng fēng yú huǒ duì chóu mián. Gūsū chéng wài Hánshān sì, yè bàn zhōng shēng dào kè chuán.","note":"以寒山寺钟声烘托离愁。","appreciation":"月色、乌啼、渔火、钟声交织，营造凄凉的夜泊意境。","background":"张继夜泊枫桥，听闻寒山寺钟声而作。","image":"images/fengqiaoyebo.jpg"},{"id":"5","title":"登鹳雀楼","author":"王之涣","dynasty":"唐","theme":"壮阔","content":"白日依山尽，黄河入海流。欲穷千里目，更上一层楼。","pinyin":"Bái rì yī shān jìn, Huánghé rù hǎi liú. Yù qióng qiān lǐ mù, gèng shàng yī céng lóu.","note":"四句描绘宏大景观。","appreciation":"以层层递进的视角，表达胸怀的开阔。","background":"王之涣登楼远眺，感慨天地之大。","image":"images/dengguanque.jpg"},{"id":"6","title":"江雪","author":"柳宗元","dynasty":"唐","theme":"孤寂","content":"千山鸟飞绝，万径人踪灭。孤舟蓑笠翁，独钓寒江雪。","pinyin":"Qiān shān niǎo fēi jué, wàn jìng rén zōng miè. Gū zhōu suō lì wēng, dú diào hán jiāng xuě.","note":"以极致的寂静表现诗人隐居情怀。","appreciation":"全诗以“绝”“灭”“孤”“独”四字构筑空灵意境。","background":"柳宗元被贬永州，写下此图景以抒怀。","image":"images/jiangxue.jpg"},{"id":"7","title":"相思","author":"王维","dynasty":"唐","theme":"相思","content":"红豆生南国，春来发几枝。愿君多采撷，此物最相思。","pinyin":"Hóng dòu shēng nán guó, chūn lái fā jǐ zhī. Yuàn jūn duō cǎi qiè, cǐ wù zuì xiāng sī.","note":"红豆象征相思之情。","appreciation":"语言朴素，却蕴含深厚情感，成为千古相思名句。","background":"王维在送别友人时作，以红豆寄托思念。","image":"images/xiangsi.jpg"},{"id":"8","title":"夜泊牛渚怀古","author":"杜甫","dynasty":"唐","theme":"怀古","content":"牛渚西江夜，青天无片云。登舟望秋月，空忆谢将军。","pinyin":"Niú zhǔ xī jiāng yè, qīng tiān wú piàn yún. Dēng zhōu wàng qiū yuè, kōng yì Xiè jiāng jūn.","note":"借古抒今，感叹时世变迁。","appreciation":"以清朗的夜色映衬对谢安的追忆，情景交融。","background":"杜甫在长江上夜泊，凭吊三国时期的谢安。","image":"images/niuzhu.jpg"}];</script>
+<meta charset="UTF-8">
+<title>关于与帮助</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root{
+    --primary:#2f6fed;
+    --secondary:#f5a623;
+    --font-family:"Helvetica Neue",Arial,sans-serif;
+    --card-bg:#fff;
+    --card-radius:8px;
+    --card-gap:16px;
+    --card-padding:12px;
+    --btn-radius:4px;
+    --transition:0.2s;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+    font-family:var(--font-family);
+    background:#f0f2f5;
+    color:#333;
+    line-height:1.5;
+    padding-top:56px; /* header height */
+}
+a{color:inherit;text-decoration:none;}
+header{
+    position:fixed;top:0;left:0;right:0;
+    height:56px;
+    background:var(--primary);
+    color:#fff;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:0 16px;
+    z-index:1000;
+    box-shadow:0 2px 6px rgba(0,0,0,.1);
+}
+header .logo{
+    font-size:1.2rem;
+    font-weight:bold;
+}
+header .nav{
+    display:flex;gap:12px;
+}
+header .nav a{
+    padding:4px 8px;
+    border-radius:var(--btn-radius);
+    transition:var(--transition);
+}
+header .nav a:hover{
+    background:rgba(255,255,255,0.2);
+}
+.search-box{
+    flex:1;
+    max-width:200px;
+    margin:0 12px;
+}
+.search-box input{
+    width:100%;
+    padding:4px 8px;
+    border:none;
+    border-radius:var(--btn-radius);
+}
+.main{
+    max-width:1200px;
+    margin:0 auto;
+    padding:var(--card-gap);
+    display:grid;
+    gap:var(--card-gap);
+}
+@media (min-width:600px){
+    .main{grid-template-columns:repeat(2,1fr);}
+}
+@media (min-width:900px){
+    .main{grid-template-columns:repeat(3,1fr);}
+}
+.card{
+    background:var(--card-bg);
+    border-radius:var(--card-radius);
+    padding:var(--card-padding);
+    box-shadow:0 2px 6px rgba(0,0,0,.1);
+}
+.card h2{
+    color:var(--secondary);
+    margin-bottom:8px;
+    font-size:1.1rem;
+}
+.card p{
+    margin-bottom:8px;
+}
+.btn{
+    display:inline-block;
+    background:var(--primary);
+    color:#fff;
+    padding:6px 12px;
+    border:none;
+    border-radius:var(--btn-radius);
+    cursor:pointer;
+    transition:var(--transition);
+    text-align:center;
+}
+.btn:hover{
+    box-shadow:0 4px 8px rgba(0,0,0,.2);
+    transform:translateY(-2px);
+}
+footer{
+    text-align:center;
+    padding:20px;
+    font-size:0.9rem;
+    color:#666;
+}
+</style>
+<meta name="description" content="介绍项目背景、使用指南、技术栈、联系方式。页面内提供返回首页的链接。"><meta name="keywords" content="古诗词,中华文化,诗词解析,古代文学,诗词搜索,朝代筛选,作者作品,主题赏析"><meta name="robots" content="index,follow,max-image-preview:large"><meta property="og:type" content="website"><meta property="og:title" content="关于与帮助"><meta property="og:description" content="介绍项目背景、使用指南、技术栈、联系方式。页面内提供返回首页的链接。"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="关于与帮助"><meta name="twitter:description" content="介绍项目背景、使用指南、技术栈、联系方式。页面内提供返回首页的链接。"><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"关于与帮助","description":"介绍项目背景、使用指南、技术栈、联系方式。页面内提供返回首页的链接。","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}}</script></head>
+<body>
+<header>
+    <div class="logo">古诗词赏析</div>
+    <div class="nav">
+        <a href="index.html">首页</a>
+        <a href="list.html">列表</a>
+        <a href="about.html">关于</a>
+        <a href="contact.html">联系</a>
+    </div>
+    <div class="search-box">
+        <input type="text" placeholder="搜索诗词、作者…" id="searchInput">
+    </div>
+</header>
+
+<main class="main">
+    <section class="card">
+        <h2>项目背景</h2>
+        <p>本平台致力于为古诗词爱好者提供一个简洁、现代的线上赏析空间。通过汇聚唐、宋等历代名篇，配以注释、赏析、背景介绍，让用户在碎片化的时代仍能沉浸于中华诗词的美妙。</p>
+    </section>
+
+    <section class="card">
+        <h2>使用指南</h2>
+        <p>1. 在首页可通过轮播或快捷筛选卡片进入诗词列表。</p>
+        <p>2. 列表页支持朝代、作者、主题多维度筛选，点击卡片查看详情。</p>
+        <p>3. 详情页提供原文、拼音、注释、赏析、背景以及前后篇切换。</p>
+        <p>4. 作者页展示作者生平与全部作品，主题页聚合同一主题下的诗词。</p>
+        <p>5. 搜索页支持关键词高亮，快速定位目标诗句。</p>
+        <p>6. 如需帮助，请返回<a href="index.html">首页</a>或访问<a href="contact.html">联系我们</a>。</p>
+    </section>
+
+    <section class="card">
+        <h2>技术栈</h2>
+        <p>前端：HTML5、CSS3（Flex/Grid 响应式布局）、原生 JavaScript（ES6+）</p>
+        <p>数据：统一的 <code>window.APP_DATA</code> 变量，页面统一通过 <code>fetch</code> 加载 <code>data/poems.json</code> 与 <code>data/authors.json</code>。</p>
+        <p>构建：纯静态文件，无后端依赖，适配所有现代浏览器。</p>
+    </section>
+
+    <section class="card">
+        <h2>联系方式</h2>
+        <p>邮箱：<a href="mailto:poetry@platform.cn">poetry@platform.cn</a></p>
+        <p>微信：poetry_platform</p>
+        <p>GitHub：<a href="https://github.com/poetry-platform" target="_blank">github.com/poetry-platform</a></p>
+    </section>
+
+    <section class="card" style="grid-column: span 3;">
+        <button class="btn" onclick="location.href='index.html'">返回首页</button>
+    </section>
+</main>
+
+<footer>
+    © 2026 中华古诗词赏析平台
+</footer>
+
+<script>
+// 简单搜索跳转示例（实际搜索页面由 search.html 处理）
+document.getElementById('searchInput').addEventListener('keydown',function(e){
+    if(e.key==='Enter'){
+        const q=encodeURIComponent(this.value.trim());
+        if(q) location.href=`search.html?q=${q}`;
+    }
+});
+</script>
+</body>
+</html>
